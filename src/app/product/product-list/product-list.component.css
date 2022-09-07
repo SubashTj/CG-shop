@@ -1,0 +1,56 @@
+app-product {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.example-card {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    opacity: 0.9;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.item img {
+    width: 64px;
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: blue;
+}
+
+.form-control {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 19%;
+    top: 30px;
+    color: blue;
+}

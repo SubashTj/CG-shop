@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+    <mat-card-header (click)="Extend()">
+        <mat-card-title>{{singleProduct.title}}</mat-card-title>
+        <mat-card-subtitle><strong>{{singleProduct.price | currency}}</strong></mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-around center">
+            <div fxLayout="column" fxFlex.gt-xs="40" style="margin-top: 20px;"> <img mat-card-image
+                    src={{singleProduct.image}} alt="Image not found" height="270px" width="337px"></div>
+            <div fxLayout="column" fxFlex.gt-xs="60" style="margin-top: 5px;">
+                <p *ngIf="extend">
+                    {{singleProduct.description}}
+                </p>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button (click)="addtocart(singleProduct)">Add To Cart</button>&nbsp;
+        <button mat-flat-button (click)="view(singleProduct)">View</button>
+    </mat-card-actions>
+
+</mat-card>

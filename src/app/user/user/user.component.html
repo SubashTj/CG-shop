@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+    <mat-card-header (click)="Extend()">
+        <mat-card-title>{{singleUser.name.firstname}}{{singleUser.name.lastname}}</mat-card-title>
+        <mat-card-subtitle><strong>{{singleUser.email}}</strong></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-around center">
+            <div fxLayout="column" fxFlex.gt-xs="40">
+                <img [src]="'https://www.w3schools.com/howto/img_avatar.png'">
+            </div>
+            <div fxLayout="column" fxFlex.gt-xs="40">
+                <p><strong>No :</strong>{{singleUser.address.number}} </p>
+                <p><strong>Street :</strong>{{singleUser.address.street}}</p>
+                <p><strong>City :</strong>{{singleUser.address.city}}</p>
+                <p><strong>Pincode :</strong>{{singleUser.address.zipcode}}</p>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button (click)="Edit(singleUser.id)">Edit</button>&nbsp;
+        <button mat-flat-button  (click)="View(singleUser.id)">View</button>
+    </mat-card-actions>
+
+</mat-card>

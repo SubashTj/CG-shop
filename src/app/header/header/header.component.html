@@ -1,0 +1,21 @@
+<mat-toolbar style="background-color:rgb(55, 48, 87) ;">
+    <span>
+        <h1 style="color: white;">CG-VAK SHOP</h1>
+    </span>
+    <span class="example-spacer"></span>
+    <a [routerLink]="['home']">Home</a>
+    <span class="example-spacer"></span>
+    <a [routerLink]="['user-list']">User</a>
+    <span class="example-spacer"></span>
+    <a [routerLink]="['product-list']">Product</a>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+        routerLink="cart">
+        <mat-icon>add_shopping_cart</mat-icon>
+        <div style="font-size:10px" class="badge bg-danger">{{totalItem}}</div>
+    </button>&nbsp;
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+        (click)="Logout()">
+        <mat-icon>account_circle</mat-icon>
+    </button>
+</mat-toolbar>

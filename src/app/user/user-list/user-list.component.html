@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>User List <button mat-mini-fab style="background-color:rgb(55, 48, 87) ;" routerLink="/main/create-user"
+                aria-label="Example icon button with a home icon">
+                <mat-icon>add</mat-icon>
+            </button></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <div fxLayout="row wrap">
+        <div fxFlex="100" fxFlex.gt-xs="100">
+            <div fxLayout="row wrap" fxFlex.gt-xs="100">
+                <app-user [singleUser]="user" *ngFor="let user of users"></app-user>
+            </div>
+        </div>
+    </div>
+</mat-card>

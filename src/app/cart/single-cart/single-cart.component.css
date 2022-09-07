@@ -1,0 +1,22 @@
+.example-card {
+    width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    border: 1.5px solid black;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.5);
+}
+button{
+    background-color:rgb(55, 48, 87) ;
+    color: white;
+}

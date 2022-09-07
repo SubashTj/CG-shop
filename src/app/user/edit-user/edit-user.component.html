@@ -1,0 +1,180 @@
+<div>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Edit  User</mat-card-title>
+        </mat-card-header>
+        <mat-divider inset></mat-divider>
+        <mat-card-content>
+            <form [formGroup]="addForm">
+                <div fxLayout="row wrap">
+                    <div fxFlex="100" fxFlex.gt-xs="100">
+                        <div fxLayout="row wrap" fxFlex.gt-xs="50">
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Firstname</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Firstname</mat-label>
+                                    <input matInput formControlName="firstname" placeholder="Firstname">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['firstname'].hasError('required') || addForm.controls['firstname'].hasError('required') && addForm.controls['firstname'].touched">
+                                        Please Enter Valid Firstname
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Email</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput formControlName="email" placeholder="Email">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['email'].hasError('required') || addForm.controls['email'].hasError('required') && addForm.controls['email'].touched">
+                                        Please Enter Valid email
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Password</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Password</mat-label>
+                                    <input matInput formControlName="password" placeholder="Password">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['password'].hasError('required') || addForm.controls['password'].hasError('required') && addForm.controls['password'].touched">
+                                        Please Enter Valid Password
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Street</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Street</mat-label>
+                                    <input matInput formControlName="street" placeholder="street">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['street'].hasError('required') || addForm.controls['street'].hasError('required') && addForm.controls['street'].touched">
+                                        Please Enter Valid Street
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Zipcode</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Zipcode</mat-label>
+                                    <input matInput formControlName="zipcode" placeholder="Zipcode">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['zipcode'].hasError('required') || addForm.controls['zipcode'].hasError('required') && addForm.controls['zipcode'].touched">
+                                        Please Enter Valid Zipcode
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Lat</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>lat</mat-label>
+                                    <input matInput formControlName="lat" placeholder="Lat">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['lat'].hasError('required') || addForm.controls['lat'].hasError('required') && addForm.controls['lat'].touched">
+                                        Please Enter Valid lat
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div fxLayout="row wrap" fxFlex.gt-xs="50">
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Lastname</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Lastname</mat-label>
+                                    <input matInput formControlName="lastname" placeholder="Lastname">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['lastname'].hasError('required') || addForm.controls['lastname'].hasError('required') && addForm.controls['lastname'].touched">
+                                        Please Enter Valid Lastname
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Username</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Username</mat-label>
+                                    <input matInput formControlName="username" placeholder="Username">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['username'].hasError('required') || addForm.controls['username'].hasError('required') && addForm.controls['username'].touched">
+                                        Please Enter Valid Username
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Number</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Number</mat-label>
+                                    <input matInput formControlName="number" placeholder="number">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['number'].hasError('required') || addForm.controls['number'].hasError('required') && addForm.controls['number'].touched">
+                                        Please Enter Valid Number
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>City</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>City</mat-label>
+                                    <input matInput formControlName="city" placeholder="City">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['city'].hasError('required') || addForm.controls['city'].hasError('required') && addForm.controls['city'].touched">
+                                        Please Enter Valid City
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>long</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>long</mat-label>
+                                    <input matInput formControlName="long" placeholder="long">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['long'].hasError('required') || addForm.controls['long'].hasError('required') && addForm.controls['long'].touched">
+                                        Please Enter Valid long
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="30">
+                                <label><strong>Phone</strong></label>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="70">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Phone</mat-label>
+                                    <input matInput formControlName="phone" placeholder="Phone">
+                                    <mat-error
+                                        *ngIf="submitted && addForm.controls['phone'].hasError('required') || addForm.controls['phone'].hasError('required') && addForm.controls['phone'].touched">
+                                        Please Enter Valid Phone
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button style="background-color: #553D67; color:#ffffff;"
+                (click)="Save(addForm.value)">Save</button>
+            <button mat-raised-button style="background-color: #553D67; color:#ffffff;" (click)="Clear()">Clear</button>
+        </mat-card-actions>
+    </mat-card>
